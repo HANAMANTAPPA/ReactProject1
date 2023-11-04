@@ -1,17 +1,21 @@
-import logo from './icon1.jpg';
-import './App.css';
+import logo from './icon1.jpg'; 
+import CartItem from './CartItem';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          hi I'm Hanumanth
-          {/* Edit <code>src/App.js</code> and save to reload. */}
+          hi I'm Hanumanth 
         </p>
-      </header>   
+      </header>    */}
+      <CartItem/>
     </div>
+    
+
   );
 }
 
