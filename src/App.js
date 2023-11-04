@@ -10,7 +10,7 @@ function App() {
           hi I'm Hanumanth
           {/* Edit <code>src/App.js</code> and save to reload. */}
         </p>
-      </header>
+      </header>   
     </div>
   );
 }
