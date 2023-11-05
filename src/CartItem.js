@@ -46,7 +46,7 @@ class CartItems extends React.Component{
         );
     }
 }
-
+ 
 const style1={
     image: {
         height :110,
