@@ -13,9 +13,23 @@ class CartItems extends React.Component{
     }
     // function for handling events 
      increaseQuantity= () => {
-        // (this.state.qty )++; 
-        console.log("This ", this.state.qty); 
+        // First approach 
+        // this.setState(
+        //     { qty : this.state.qty +1}
+        // );
+        // console.log("This ", this.state.qty); 
+
+        // Second approach 
+        this.setState((previourState)=>{
+            return {qty :previourState.qty +1};
+        });
     }
+    decreaseQuantity =() =>{
+        this.setState((pre)=>{
+            return {qty: pre.qty -1}
+        });
+    }
+    
     render (){
         const { price , title , qty } =this.state;
         return (
@@ -35,6 +49,7 @@ class CartItems extends React.Component{
                         className="action-icons" 
                         src="https://as2.ftcdn.net/v2/jpg/01/07/62/07/1000_F_107620769_UwNVSoXnKS4VNcOKoZjPohlEPn83oE38.jpg" />  
                         <img alt="decrease" 
+                        onClick={this.decreaseQuantity}
                         className="action-icons" 
                         src="https://as1.ftcdn.net/v2/jpg/03/73/49/86/1000_F_373498649_nBxauQ0ipBSVrVcMpWWVmTpXu3BLvRyY.jpg" /> 
                         <img alt="delete" 
