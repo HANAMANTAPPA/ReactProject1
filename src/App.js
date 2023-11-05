@@ -1,4 +1,4 @@
-import logo from './icon1.jpg'; 
+ 
 import CartItem from './CartItem';
 
 
