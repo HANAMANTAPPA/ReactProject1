@@ -1,5 +1,5 @@
  
-import CartItem from './CartItem';
+import Cart  from './Cart';
 
 
 
@@ -12,7 +12,7 @@ function App() {
           hi I'm Hanumanth 
         </p>
       </header>    */}
-      <CartItem/>
+      <Cart/>
     </div>
     
 
